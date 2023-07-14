@@ -6,11 +6,15 @@ async function trechoMusica(artista, musica) {
     //fazendo requisição a Api do Vagalumes
     const responstaApiVagalumes = await fetch(`https://api.vagalume.com.br/search.php?apikey=${ApikeyVagalume}&art=${artista}&mus=${musica}&extra=relart`);
     const data = await responstaApiVagalumes.json();
-    const LetraMusica = data.mus[0].text;
-
-    if (!data.mus || data.mus.length === 0) {
-        return { message: 'Música não encontrada' };
+    
+    //tratando caso artista e musica não exista
+    if (data.type === "notfound" || data.type === "song_notfound") {
+        return {
+          message: data.type === "notfound" ? 'Artista não encontrado.' : 'Música não encontrada.'
+        };
     }
+
+    const LetraMusica = data.mus[0].text;
 
     // selecionando o primeiro paragrafo do trecho
     const paragrafos = LetraMusica.split('\n\n');
