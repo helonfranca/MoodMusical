@@ -22,8 +22,19 @@ async function trechoMusica(artista, musica) {
     // pegando o segundo paragrafo, costuma ter mais conteudo
     const primeiroParagrafo = paragrafos[1];
 
-    // trecho tratado
-    const trechoMusica = primeiroParagrafo;
+    // remover quebras de linha
+    const trechoSemQuebrasDeLinha = primeiroParagrafo.replace(/\n/g, ' ');
+
+    // remover caracteres especiais
+    const trechoSemCaracteresEspeciais = trechoSemQuebrasDeLinha.replace(/\[|\]|\\/g, '');
+
+    // remover espaços duplicados
+    const trechoSemEspacosDuplicados = trechoSemCaracteresEspeciais.replace(/\s+/g, ' ');
+
+    // tratando trecho
+    const trechoMusica = trechoSemEspacosDuplicados;
+
+    console.log(trechoMusica)
 
     return trechoMusica;
 }
