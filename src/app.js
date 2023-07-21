@@ -7,18 +7,13 @@ const {
 } = require("./trechoMusica");
 require("dotenv").config();
 
-const cors = require('cors');
-
 const app = express();
 const port = 3000;
 
 app.use(express.json());
-app.use(cors());
 
 app.get("/buscarSentimento", async (req, res) => {
 	try {
-		res.header("Access-Control-Allow-Origin", "*");
-		res.header("Access-Control-Allow-Methods", 'GET,PUT,POST,DELETE');
 		// Parâmetros
 	    const artista = req.query.artista;
 		const musica = req.query.musica;
@@ -26,7 +21,7 @@ app.get("/buscarSentimento", async (req, res) => {
         let respostaJSON;
 
 		respostaMusica = await trechoMusica(artista, musica);
-
+        
         //verificando o retorno da api do vagalumes
         if (respostaMusica.message) {
             const tipoMensagem = respostaMusica.type; // obtém o tipo de mensagem retornado
