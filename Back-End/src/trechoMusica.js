@@ -34,8 +34,6 @@ async function trechoMusica(artista, musica) {
     // tratando trecho
     const trechoMusica = trechoSemEspacosDuplicados;
 
-    console.log(trechoMusica)
-
     return trechoMusica;
 }
 
