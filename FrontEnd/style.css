@@ -1,0 +1,75 @@
+
+
+
+html{
+  border: 0;
+  margin:0;
+  padding: 0;
+}
+
+body {
+    margin: 0;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #8c52ff, #5ce1e6);
+    background-size: 500% 300%;
+
+    animation: AnimationName 20s ease infinite;
+
+}
+@keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+
+.form-control {
+    max-height: 200px; /* Aumenta o quadro do parágrafo */
+    overflow-y: auto; /* Adiciona barra de rolagem quando o conteúdo é maior que o quadro */
+}
+
+p {
+    line-height: 3.0; /* Aumenta o tamanho vertical da tag p */
+}
+
+textarea {
+  height: 150px;
+}
+
+
+/* Definindo a fonte local */
+@font-face {
+    font-family: 'fonte'; /* Nome da fonte */
+    src: url('fonts/Amsterdam.ttf') format('truetype'); /* Caminho da fonte e seu formato */
+
+}
+
+@font-face {
+    font-family: 'fontelabel'; /* Nome da fonte */
+    src: url('fonts/LexendMega-Bold.ttf') format('truetype'); /* Caminho da fonte e seu formato */
+
+}
+
+label{
+    font-family: 'fontelabel', "Comic Sans MS";
+
+}
+
+input[type="submit"]{
+    font-family: 'fontelabel', "Comic Sans MS";
+}
+
+
+
+/* Aplicando a fonte à tag h1 */
+h1 {
+    font-family: 'fonte', "Comic Sans MS";
+    /* Caso a fonte não seja encontrada, o fallback será uma fonte sans-serif */
+    color: #ffffff;
+}
+
+
+
+
