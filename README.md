@@ -25,10 +25,14 @@ Siga as etapas abaixo para configurar e executar o projeto em seu ambiente local
 git clone https://github.com/helonfranca/MoodMusical.git
 ```
 
-2. Navegue até o diretório do projeto:
+2. Navegue até o diretório do projeto (na pasta "Back-End"):
 
 ```
-cd MoodMusical
+cd MoodMusical/Back-End
+
+ou
+
+cd MoodMusical-main/Back-End
 ```
 
 3. Instale as dependências do projeto:
