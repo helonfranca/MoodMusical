@@ -25,7 +25,7 @@ Siga as etapas abaixo para configurar e executar o projeto em seu ambiente local
 git clone https://github.com/helonfranca/MoodMusical.git
 ```
 
-2. Navegue até o diretório do projeto (na pasta "Back-End"):
+2. Navegue até o diretório do projeto (ou vá na pasta "Back-End" caso não funcione):
 
 ```
 cd MoodMusical/Back-End
@@ -41,7 +41,7 @@ cd MoodMusical-main/Back-End
 npm install
 ```
 
-4. Crie um arquivo `.env` na raiz do projeto e defina as variáveis de ambiente necessárias. Por exemplo:
+4. Crie um arquivo `.env` na raiz do projeto (ou na pasta "Back-End" caso não funcione. E de 'npm install' mais uma vez) e defina as variáveis de ambiente necessárias. Por exemplo:
 
 ```
 VAGALUME_API_KEY=SuaChaveDaAPIVagalume
