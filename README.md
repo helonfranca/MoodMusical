@@ -25,12 +25,12 @@ Siga as etapas abaixo para configurar e executar o projeto em seu ambiente local
 git clone https://github.com/helonfranca/MoodMusical.git
 ```
 
-2. Navegue até o diretório do projeto (ou vá na pasta "Back-End" caso não funcione):
+2. Navegue até o diretório do projeto (ou caso não funcione, fazer isso para pasta "Back-End"):
 
 ```
 cd MoodMusical/Back-End
 
-ou
+ou (caso não funcione:)
 
 cd MoodMusical-main/Back-End
 ```
@@ -55,6 +55,8 @@ npm start
 ```
 
 6. Acesse o serviço na rota `http://localhost:3000/buscarSentimento`
+
+7. Um exemplo de rota pura pode ser: http://localhost:3000/buscarSentimento?artista=The%20Strokes&musica=Reptilia
 
 
 
