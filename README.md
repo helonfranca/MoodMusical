@@ -44,8 +44,8 @@ npm install
 4. Crie um arquivo `.env` na raiz do projeto (ou na pasta "Back-End" caso não funcione. E de 'npm install' mais uma vez) e defina as variáveis de ambiente necessárias. Por exemplo:
 
 ```
-VAGALUME_API_KEY=SuaChaveDaAPIVagalume
-CHATGPT_API_KEY=SuaChaveDaAPIChatGPT
+API_KEY_VAGALUME=SuaChaveDaAPIVagalume
+API_KEY_CHATGPT=SuaChaveDaAPIChatGPT
 ```
 
 5. Execute o projeto:
