@@ -25,6 +25,20 @@ body {
     100%{background-position:0% 51%}
 }
 
+/* Adicione a animação para os elementos que desejam subir na tela */
+.elemento-com-animacao {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: ElementoSubindo 1s ease-out forwards;
+}
+
+@keyframes ElementoSubindo {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .form-control {
     max-height: 200px; /* Aumenta o quadro do parágrafo */
     overflow-y: auto; /* Adiciona barra de rolagem quando o conteúdo é maior que o quadro */
